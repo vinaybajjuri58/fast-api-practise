@@ -36,6 +36,14 @@ def read_root():
 def chat_endpoint(input: ChatInput):
     return {"reply": f"You said: {input.text}"}
 
+def main():
+    print("Hello from fast-api-practise!")
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+if __name__ == "__main__":
+    main()
+
 
 
 
